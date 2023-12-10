@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="793.0" prefWidth="956.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.xyz.teamRankingController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="704.0" prefWidth="852.0">
+         <children>
+            <TextField fx:id="rank_2" layoutX="294.0" layoutY="48.0" />
+            <TextField fx:id="rank_3" layoutX="294.0" layoutY="101.0" />
+            <TextField fx:id="rank_4" layoutX="294.0" layoutY="158.0" />
+            <TextField fx:id="rank_5" layoutX="294.0" layoutY="210.0" />
+            <TextField fx:id="rank_6" layoutX="294.0" layoutY="268.0" />
+            <TextField fx:id="rank_7" layoutX="294.0" layoutY="320.0" />
+            <TextField fx:id="rank_8" layoutX="294.0" layoutY="377.0" />
+            <TextField fx:id="rank_9" layoutX="294.0" layoutY="430.0" />
+            <TextField fx:id="rank_10" layoutX="294.0" layoutY="482.0" />
+            <TextField fx:id="rank_11" layoutX="294.0" layoutY="535.0" />
+            <TextField fx:id="rank_1" layoutX="294.0" layoutY="2.0" />
+            <TextField fx:id="rank_12" layoutX="294.0" layoutY="584.0" />
+            <Button fx:id="get_ranking" layoutX="735.0" layoutY="299.0" mnemonicParsing="false" onAction="#get_ranking" text="GET RANKING" />
+            <Label layoutX="230.0" layoutY="6.0" text="No. 1" />
+            <Label layoutX="230.0" layoutY="52.0" text="No. 2" />
+            <Label layoutX="230.0" layoutY="105.0" text="No. 3" />
+            <Label layoutX="230.0" layoutY="162.0" text="No. 4" />
+            <Label layoutX="230.0" layoutY="214.0" text="No. 5" />
+            <Label layoutX="230.0" layoutY="272.0" text="No. 6" />
+            <Label layoutX="230.0" layoutY="324.0" text="No. 7" />
+            <Label layoutX="230.0" layoutY="381.0" text="No. 8" />
+            <Label layoutX="230.0" layoutY="434.0" text="No. 9" />
+            <Label layoutX="230.0" layoutY="486.0" text="No. 10" />
+            <Label layoutX="230.0" layoutY="539.0" text="No. 11" />
+            <Label layoutX="230.0" layoutY="588.0" text="No. 12" />
+            <Button layoutX="755.0" layoutY="369.0" mnemonicParsing="false" onAction="#home_btn" text="HOME" />
+            <TextField fx:id="p1" layoutX="505.0" layoutY="2.0" />
+            <TextField fx:id="p2" layoutX="505.0" layoutY="48.0" />
+            <TextField fx:id="p3" layoutX="505.0" layoutY="101.0" />
+            <TextField fx:id="p4" layoutX="505.0" layoutY="158.0" />
+            <TextField fx:id="p5" layoutX="505.0" layoutY="210.0" />
+            <TextField fx:id="p6" layoutX="505.0" layoutY="268.0" />
+            <TextField fx:id="p7" layoutX="505.0" layoutY="320.0" />
+            <TextField fx:id="p8" layoutX="505.0" layoutY="377.0" />
+            <TextField fx:id="p9" layoutX="505.0" layoutY="430.0" />
+            <TextField fx:id="p10" layoutX="505.0" layoutY="482.0" />
+            <TextField fx:id="p11" layoutX="505.0" layoutY="535.0" />
+            <TextField fx:id="p12" layoutX="505.0" layoutY="584.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

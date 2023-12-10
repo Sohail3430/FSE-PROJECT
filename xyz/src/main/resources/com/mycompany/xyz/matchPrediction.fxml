@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="575.0" prefWidth="882.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.xyz.MatchPredictionController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="540.0" prefWidth="842.0">
+         <children>
+            <ComboBox fx:id="team1" layoutX="69.0" layoutY="54.0" prefWidth="150.0" />
+            <ComboBox fx:id="team2" layoutX="630.0" layoutY="54.0" prefWidth="150.0" />
+            <TextField fx:id="team1_name" layoutX="69.0" layoutY="129.0" />
+            <TextField fx:id="team2_name" layoutX="631.0" layoutY="129.0" />
+            <TextField fx:id="win_percentage_team1" layoutX="69.0" layoutY="329.0" />
+            <TextField fx:id="win_percentage_team2" layoutX="631.0" layoutY="329.0" />
+            <Button fx:id="get_prediction" layoutX="356.0" layoutY="246.0" mnemonicParsing="false" onAction="#get_Prediction" prefHeight="44.0" prefWidth="139.0" text="GET PREDICTION" textFill="#3107b0">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button layoutX="400.0" layoutY="475.0" mnemonicParsing="false" onAction="#home_btn" text="HOME" />
+            <Label layoutX="350.0" layoutY="46.0" prefHeight="51.0" prefWidth="150.0" text="MATCH">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="120.0" prefHeight="68.0" prefWidth="189.0" text="PREDICTION">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="14.0" text="Team 1 (HOME)">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="635.0" layoutY="16.0" prefHeight="30.0" prefWidth="150.0" text="Team 2 (AWAY)">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="276.0" prefHeight="44.0" prefWidth="189.0" text="\% value of Team 1">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="605.0" layoutY="268.0" prefHeight="44.0" prefWidth="189.0" text="\% value of Team 2">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,17 @@
+com\mycompany\xyz\SecondaryController.class
+com\mycompany\xyz\teamRankingController.class
+com\mycompany\xyz\AddPlayerController.class
+com\mycompany\xyz\TeamHistoryList.class
+module-info.class
+com\mycompany\xyz\App.class
+com\mycompany\xyz\TeamsController.class
+com\mycompany\xyz\playersList.class
+com\mycompany\xyz\AddMatch2Controller.class
+com\mycompany\xyz\player.class
+com\mycompany\xyz\PrimaryController.class
+com\mycompany\xyz\AddMatch1Controller.class
+com\mycompany\xyz\playersNode.class
+com\mycompany\xyz\MyTeam.class
+com\mycompany\xyz\TeamHistoryNode.class
+com\mycompany\xyz\team.class
+com\mycompany\xyz\MatchPredictionController.class
