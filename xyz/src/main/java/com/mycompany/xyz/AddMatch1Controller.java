@@ -18,10 +18,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
-/**
- *
- * @author shahe
- */
+
 public class AddMatch1Controller implements Initializable {
     
     
