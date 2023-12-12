@@ -4,10 +4,7 @@
  */
 package com.mycompany.xyz;
 
-/**
- *
- * @author shahe
- */
+
 
 
 class playersNode {
