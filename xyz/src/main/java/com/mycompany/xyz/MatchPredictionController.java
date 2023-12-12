@@ -19,10 +19,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- *
- * @author shahe
- */
+
 public class MatchPredictionController implements Initializable {
     
     private Stage stage;
