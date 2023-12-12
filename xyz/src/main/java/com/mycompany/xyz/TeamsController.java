@@ -19,11 +19,7 @@ import javafx.stage.Stage;
 
 
 
-/**
- * FXML Controller class
- *
- * @author shahe
- */
+
 public class TeamsController {
     
       @FXML
