@@ -22,10 +22,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- *
- * @author shahe
- */
+
 public class AddMatch2Controller {
     
     private Stage stage;
