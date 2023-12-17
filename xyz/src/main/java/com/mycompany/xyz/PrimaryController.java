@@ -54,6 +54,8 @@ public class PrimaryController {
 		boolean winn;
 		
 		try {
+			// here we will add the 12 teams in the array
+
 			
 			meriteam.AddTeam(1, "pakistan");
 			meriteam.AddTeam(2, "india");
@@ -76,7 +78,9 @@ public class PrimaryController {
         	String url = "jdbc:ucanaccess://TEAMS.accdb"; //Establishing Connection
         	con = DriverManager.getConnection(url);
             
-        	
+                // the code below is used to FETCH the data from the access database
+			// the fetched data is saved in the LINKEDLIST
+			
         	pst = con.prepareStatement("select * from pakistan");
         	rs = pst.executeQuery();
         	
