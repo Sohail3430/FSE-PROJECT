@@ -5,7 +5,8 @@
 package com.mycompany.xyz;
 
 
-
+// PlayersNode class which is the node of the PLAYERS LinkedList
+// it has player object and a pointer to next node
 
 class playersNode {
 
@@ -21,6 +22,8 @@ class playersNode {
 
 
 
+// teamHistoryNode is the  node of the HistoryLinkedList where history of matches is stored
+
 class TeamHistoryNode{
 	
 	String opponent;
@@ -34,6 +37,9 @@ class TeamHistoryNode{
 	}
 }
 
+
+
+// TeamHistoryList is the LinkedList Class where we have created some basic methods to add and print the contents of the LinkedList
 
 class TeamHistoryList {
 	TeamHistoryNode head;
@@ -74,8 +80,7 @@ class TeamHistoryList {
 
 
 
-
-
+// This is the player Class which has all the details of a player 
 
 class player {
 
@@ -125,6 +130,8 @@ class player {
 
     }
 }
+
+
 
 class playersList {
 
@@ -206,7 +213,8 @@ class playersList {
 
 
 
-
+// this is the team class which is the array in our case
+// the fields mentioned here are the data present on each element of the array.
 	
 class team {
 
@@ -248,7 +256,7 @@ class team {
 
 
 
-	
+// this is the main class of the project which holds all the methods of this project	
 
 class MyTeam
 {
@@ -260,7 +268,7 @@ class MyTeam
  //historyList x = new historyList();
 
  
- 
+ // here we created an array of size 12 which is the number of teams in our database.
 
 public MyTeam() {
 	
@@ -270,6 +278,8 @@ public MyTeam() {
 
 }
 
+// this method is used to add a team by first checking whether it already exists or not.
+	
 public void AddTeam(int rank, String name) {          //constant
 	
     if (count < G.length && duplicateCheck(name) == true) {
@@ -283,6 +293,8 @@ public void AddTeam(int rank, String name) {          //constant
 }
 
 
+// this method is used to sort the teams in the array based on their points.
+	
 public void Sortcountry() {              // n^2
 	
 	team temp;
@@ -299,6 +311,7 @@ public void Sortcountry() {              // n^2
     }
 }
 
+// this method is used to add a player in the linkedList by first checking the team to which it is assigned to.	
 
 public void AddPlayer(String type, String team, String name, int age, int matches, int batRuns, double batAverage, int batBest, double batStrike, int halfCentury, int century, int noOfWickets, double bowlAverage, int noOfBalls, int runs, int bowlBest, int noOf5Wickets, double economy, double bowlStrike) {
     int i = getTeamIndex(team);             // n
@@ -312,6 +325,7 @@ public void AddPlayer(String type, String team, String name, int age, int matche
 }
 
 
+	
 public boolean duplicateCheck(String name) {    //n
     for (int i = 0; i < count; i++) {
         if (G[i].name.equals(name)) {
@@ -321,7 +335,9 @@ public boolean duplicateCheck(String name) {    //n
     return false;
 }
 
-
+	
+// this method is used to get the index of the array on which a specific team is present
+	
 public int getTeamIndex(String team) {      //n
     int i;
     for (i = 0; i < count; i++) {
@@ -331,6 +347,9 @@ public int getTeamIndex(String team) {      //n
     }
     return i;
 }
+
+// this method is used to find a player in the LinkedList and we have 2 parameters here which is the team and the player
+	// it returns a playersNode
 
 public playersNode findplayer (String team, String name) {     //n
 	
@@ -414,6 +433,11 @@ public playersNode find(String team,String type,String name)   //n
 }
 
 
+// this method is part of the match prediction feature
+	// here we will compare the top three batsmen of a team and calculate a score based on their average
+	// this score will be used later in the project in the matchprediction method
+
+
 public double batsmanAnalysis(String team) {  //n
 	
 	double b1 = 0;
@@ -442,6 +466,8 @@ public double batsmanAnalysis(String team) {  //n
 	
 }
 
+// this method compares the bowling Average of teams and calculate a score based on that
+	
 public double bowlerAnalysis(String country) {   //n
 
 	double a1=1000;
@@ -464,7 +490,7 @@ public double bowlerAnalysis(String country) {   //n
 	
 }
 
-
+// this method is a simple score calculated for the match prediction for the home away factor
 
 public double homeAway(String team) {  //constant
 	
@@ -478,6 +504,7 @@ public double homeAway(String team) {  //constant
 	
 }
 
+	// this method returns the ranking of the team
 
 public double ranking(String team) {    //n
 	
@@ -494,7 +521,9 @@ public double ranking(String team) {    //n
 
 
 
-
+// this is the matchprediction method
+	// here we will compare the statistics of both teams with each other 
+	// and calculate a percentage based on that.
 
 public double matchPrediction(String country1, String country2) { //n
 	
